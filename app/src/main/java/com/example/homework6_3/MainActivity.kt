@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         binding.rvHints.adapter = adapter
     }
 
-    private fun saveTag() {           // 1) this fun finds
+    private fun saveTag() {
         binding.ivSend.setOnClickListener {
             savedTags.addAll(findTag(binding.etText.text.toString()))
             binding.etText.text.clear()
